@@ -1,8 +1,22 @@
 1. Create a repository in github
 2. Giv ethe following commmands
     * git init
-    * git add
+    * git add .
     * git commit -m "your message"
     * git branch -m main
     * git remote add origin "provide the link of your github repo"
-    * git push origin main
+    * git push -u origin main
+
+------------------------------------
+open settings in github > pages
+
+select branxh > select main > save
+
+Go to actions > pages build and deploy > task deployed link
+
+
+-----------------------------------------
+to add new files:
+git add .
+git commit -m "your message"
+git push -u origin main
