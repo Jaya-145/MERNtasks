@@ -1,0 +1,8 @@
+1. Create a repository in github
+2. Giv ethe following commmands
+    * git init
+    * git add
+    * git commit -m "your message"
+    * git branch -m main
+    * git remote add origin "provide the link of your github repo"
+    * git push origin main
