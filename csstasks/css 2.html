@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS 2</title>
+    <style>
+      .bars {
+        display: flex;
+      }
+
+      a {
+        text-decoration: none;
+      }
+
+      .v-nav {
+        width: 200px;
+        background-color: rgb(179, 236, 253);
+      }
+
+      #item1 a {
+        display: block;
+        color: darkblue;
+        padding: 8px 16px;
+      }
+
+      #item1 a.active {
+        background-color: orange;
+        color: white;
+      }
+
+      #item1 a:hover {
+        background-color: rgb(126, 125, 125);
+        color: white;
+      }
+      .h-nav {
+        display: flex;
+        background-color: rgb(221, 221, 221);
+        padding: 10px;
+      }
+      #item a{
+        width: 100%;
+        height: 100%;
+        padding: 10px;
+        color: darkblue;
+      }
+      #item a:hover {
+        background-color: rgb(160, 156, 156);
+        color: white;
+      }
+      #item a.active{
+        background-color: rgb(102, 101, 101);
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="bars">
+      <div style="margin-top: 5%">
+        <h2>Vertical Navigation bar</h2>
+        <div class="v-nav">
+          <div id="item1"><a class="active" href="#home">Home</a></div>
+          <div id="item1"><a href="#java">Java</a></div>
+          <div id="item1"><a href="#css">CSS</a></div>
+          <div id="item1"><a href="#html">HTML</a></div>
+          <div id="item1"><a href="#bs">Bootstrap</a></div>
+        </div>
+      </div>
+      <div style="margin-left: 12%; margin-top: 10%">
+        <h2>Horizontal Navigation bar</h2>
+        <div class="h-nav">
+          <div id="item"><a class="active" href="#home">Home</a></div>
+          <div id="item"><a href="#java">Java</a></div>
+          <div id="item"><a href="#css">CSS</a></div>
+          <div id="item"><a href="#html">HTML</a></div>
+          <div id="item"><a href="#bs">Bootstrap</a></div>
+        </div>
+        <!-- <div class="h-nav">
+          <div id="item">Home</div>
+          <div id="item">Java</div>
+          <div id="item">CSS</div>
+          <div id="item">HTML</div>
+          <div id="item">Bootstrap</div> -->
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+
+

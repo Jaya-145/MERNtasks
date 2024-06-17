@@ -11,23 +11,27 @@
       }
       table,
       tr {
+        margin-left: auto;
+        margin-right: auto;
         border: 1px solid black;
         border-collapse: collapse;
-        width: 100%;
+        width: 70%;
       }
       #left {
         text-align: center;
+        font-weight: bold;
         width: 30%;
       }
       #right {
         width: 70%;
       }
-      #adrs {
-        height: 5rem;
-      }
       input {
         width: 99%;
-        height: 100%;
+      }
+      #btn {
+        margin-left: 50%;
+        margin-right: 50%;
+        margin-top: 2rem;
       }
     </style>
   </head>
@@ -77,29 +81,20 @@
         </td>
       </tr>
       <tr>
-        <td id="left"><label for="gender">Gender:</label></td>
+        <td id="left">
+          <label for="gender">Gender:</label>
+        </td>
         <td id="right">
-          <div>
-            <table id="gentab">
-              <tr>
-                <td>
-                  <input type="radio" value="male" name="Gender" id="male" />
-                  <label for="male">Male</label>
-                </td>
-              </tr>
-              <tr>
-                <td>
+                  <input type="radio"  name="Gender" id="male" />Male<br/>
+                  <hr/>
                   <input
                     type="radio"
                     value="female"
                     name="Gender"
                     id="female"
-                  />
-                  <label for="female">Female</label>
-                </td>
-              </tr>
-            </table>
-          </div>
+                  />Female
+          </td>
+      </tr>
           <tr>
             <td id="left">
               <label for="age">Age:</label>
@@ -116,12 +111,12 @@
               <input type="text" id="phno" />
             </td>
           </tr>
-          <tr id="adrs">
+          <tr id="adrs" style="height: 4rem">
             <td id="left">
               <label for="add">Address:</label>
             </td>
             <td id="right">
-              <input type="text" id="add" />
+              <input type="text" id="add" style="height: 4rem" />
             </td>
           </tr>
           <tr>
@@ -134,6 +129,50 @@
           </tr>
         </td>
       </tr>
+      <tr>
+        <td id="left">
+          <label for="country">Country:</label>
+        </td>
+        <td>
+          <select name="country" id="cntry" style="width: 35%">
+            <option value="choose">Choose your country</option>
+            <option value="india">India</option>
+            <option value="pak">Pakisthan</option>
+            <option value="srilanka">SriLanka</option>
+            <option value="other">Other</option>
+          </select>
+        </td>
+      </tr>
+      <tr>
+        <td id="left" ><label for="lang">Languages known</label></td>
+        <td id="right">
+          <div>
+            <input type="checkbox" name="lang" id="eng" />
+            <label for="eng">English</label>
+            <input type="checkbox" name="lang" id="kan" />
+            <label for="kan">Kannada</label>
+            <input type="checkbox" name="lang" id="hin" />
+            <label for="hin">Hindi</label>
+            <input type="checkbox" name="lang" id="tel" />
+            <label for="tel">Telugu</label>
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="2">
+          <div>
+            <input type="checkbox" id="tic" />
+            <label for="tic">Hereby I declare that all the details are true</label>
+          </div> 
+        </td>
+      </tr>
+      <tr>
+        <td style="text-align: end" colspan="2">
+          Log in to
+          <a href="https://ethnus.com/" target="_blank">Ethnus</a> website
+        </td>
+      </tr>
     </table>
+    <button id="btn">Register</button>
   </body>
 </html>

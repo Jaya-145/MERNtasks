@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS 6</title>
+  </head>
+  <style>
+    .box {
+      height: 100vh;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .data {
+      height: 390px;
+      width: 500px;
+      display: block;
+      padding: 10px;
+    }
+    .prof {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .prof img {
+      height: 200px;
+      width: 200px;
+    }
+    label {
+      font-size: 1.3rem;
+    }
+  </style>
+  <body>
+    <div class="box">
+      <div class="data">
+        <div class="prof">
+          <img src="./prof.jpeg" />
+        </div>
+        <div>
+          <label for="username">Username</label>
+        </div>
+        <div>
+          <input
+            type="text"
+            id="username"
+            placeholder="Enter Username"
+            style="width: 100%"
+          />
+        </div>
+        <div><label for="pass">Password</label></div>
+        <div>
+          <input
+            type="password"
+            id="pass"
+            placeholder="Enter Password"
+            style="width: 100%"
+          />
+        </div>
+        <div>
+          <button
+            style="
+              margin: 10px;
+              width: 100%;
+              color: white;
+              background-color: blue;
+            "
+          >
+            Login
+          </button>
+        </div>
+        <div>
+          <input type="checkbox" id="rememberme" />
+          <label for="rememberme">Remember me</label>
+        </div>
+        <div style="height: 45px; background-color: rgb(233, 223, 223)">
+          <button
+            style="
+              background-color: rgba(241, 35, 35, 0.849);
+              width: 60px;
+              height: 30px;
+              border-radius: 5px;
+              float: left;
+            "
+          >
+            Cancel
+          </button>
+          <p style="float: right">Forgot <a href="">password?</a></p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
