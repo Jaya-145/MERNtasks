@@ -1,5 +1,5 @@
 1. Create a repository in github
-2. Giv ethe following commmands
+2. Give the following commmands
     * git init
     * git add .
     * git commit -m "your message"
